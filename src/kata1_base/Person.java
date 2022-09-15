@@ -14,7 +14,6 @@ public class Person {
         this.birthdate = birthdate;
     }
 
-    //getName, getAge, getBirthdate
 
     public String getName() {
         return this.name;
@@ -27,7 +26,6 @@ public class Person {
     public int getAge(){
         Calendar today = GregorianCalendar.getInstance();
         return (int) (milliSecondsToYear(today.getTimeInMillis() - birthdate.getTimeInMillis()));
-        //return (int) ((new Date().getTime() - birthdate.getTime())/31536000000L);
     }
     private long milliSecondsToYear(long milles){
         return milles / MILLISECONDS_PER_YEAR;
