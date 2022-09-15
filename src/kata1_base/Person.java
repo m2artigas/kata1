@@ -1,10 +1,7 @@
 package kata1_base;
 
-import java.time.LocalDate;
-import java.time.Period;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+
+import java.time.*;
 
 public class Person {
     private final String name;
@@ -14,8 +11,6 @@ public class Person {
         this.name = name;
         this.birthdate = birthdate;
     }
-
-    //getName, getAge, getBirthdate
 
     public String getName() {
         return this.name;
